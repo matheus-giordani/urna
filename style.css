@@ -1,0 +1,226 @@
+/* fazendo animação de piscar o numero */
+@keyframes pisca 
+{
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+    /* toda classe que eu atribui essa animação ela vai ser ativa */
+}
+body
+{
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna
+{
+    background-color: #dbd5c9;
+    padding: 30px;
+    /* deixa o itens dentro da div urna um ao lado do outro */
+    display: flex;
+
+}
+.tela
+{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #444;
+    display: flex;
+    flex-direction: column;
+}
+.teclado
+{
+    background-color: #403a3a;
+    margin-left: 30px;
+}
+.teste
+{
+    width: 200px;
+    height: 350px;
+}
+.teclado_linha
+{
+    display: flex;
+    justify-content: center;
+    /* alinha um do lado do outro com o final */
+    align-items: flex-end ;
+    
+}
+.teclado_botao
+{
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    /* alinha ao meio horizontalmente com o espaço disponivel para a div */
+    justify-content: center;
+    /* alinha ao meio verticalmente com o espaço disponivel para a div*/
+    align-items: center;
+    margin: 10px;
+    /* quando o cursor passa pelo botao ele muda para a mãozinha */
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #666;
+
+}
+
+.btn_branco
+{
+    background-color: #fff;
+    color: #000;
+    font-size:  15px;
+}
+
+.btn_corrige
+{
+    background-color: #f09046;
+    color: #000;
+    font-size: 15px;
+}
+
+.btn_confirma
+{
+    background-color:  #48c079;
+    color: #000;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+.d1
+{
+    flex: 1;
+    display: flex;
+}
+.d1_esquerda
+{
+    display: flex;
+    flex-direction: column ;
+    flex: 1;
+    padding-left: 20px;
+}
+.d1_esquerda_1
+{
+    height:  50px;
+    
+    display: flex;
+    /* alinha ao meio verticalmente */
+    align-items: center;
+    
+}
+.d1_esquerda_2
+{
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d1_esquerda_3
+{
+    height: 50px;
+    
+    
+
+}
+.numero
+{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+.pisca
+{
+    animation-name: pisca;
+    animation-duration:0.8s ;
+    animation-iteration-count: infinite;
+}
+.d1_esquerda_4
+{
+    flex: 1;    
+    line-height: 30px;
+    
+}
+
+.d1_direita
+{
+    width: 90px;
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-end;
+}
+.d1_direita_image
+{
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: center;   
+    
+    
+}
+
+.d1_direita_image img
+{
+    width: 100%;
+    height: 110px;
+    
+    
+    
+    
+}
+.d1_direita_image.small
+{
+    width: 80%;
+    font-size:13px;
+}
+.d2
+{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left: 5px;
+    
+}
+.aviso_grande
+{
+    
+    font-size: 15px;
+    font-weight: bold;
+    
+    
+}
+
+.aviso_grande.num
+{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.aviso_muito_grande
+{
+    height:100%;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#fim
+{
+    display: flex;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+}
