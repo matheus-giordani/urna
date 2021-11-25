@@ -74,6 +74,7 @@ body
     background-color: #fff;
     color: #000;
     font-size:  15px;
+    width: auto ;
 }
 
 .btn_corrige
@@ -81,6 +82,7 @@ body
     background-color: #f09046;
     color: #000;
     font-size: 15px;
+    width: auto;
 }
 
 .btn_confirma

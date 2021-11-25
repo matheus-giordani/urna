@@ -1,11 +1,15 @@
 
-// variavei de controle de interface
+// variaveis de controle de interface
 let seuVotopara = document.querySelector('.d1_esquerda_1 span');
 let cargo = document.querySelector('.d1_esquerda_2 span');
 let descricao = document.querySelector('.d1_esquerda_4');
 let aviso = document.querySelector('.d2');
 let lateral = document.querySelector('.d1_direita');
 let numeros = document.querySelector('.d1_esquerda_3');
+let div_button_branco = document.querySelector('.div_btn_branco');
+
+
+
 
 //variaveis de controle de ambiente
 let EtapaAtual = 0;
@@ -40,6 +44,7 @@ function comecarEtapa() {
     aviso.style.display = 'none';
     lateral.innerHTML = '';
     numeros.innerHTML = numeroHtml;
+
 }
 
 function atualizaInterface() {
@@ -116,6 +121,7 @@ function confirma() {
         VotoConfirmado = true;
         console.log("voto confirmado BRANCO");
 
+
     }
     else if (codigo_candidato.length === etapa.numeros) {
         VotoConfirmado = true;
@@ -137,6 +143,8 @@ function confirma() {
             aviso.style.display = 'none';
             numeros.innerHTML = '';
             descricao.innerHTML = '<div id="fim" class="pisca">FIM</div>';
+            div_button_branco.innerHTML = '<button class="teclado_botao btn_branco" onclick="branco()" disabled> BRANCO</button>'
+
             lateral.innerHTML = '';
         }
 
