@@ -8,7 +8,7 @@ let etapas_eleicao =
                     {
                         numero: '38111',
                         nome: 'Bruno Billa',
-                        partido: 'PDT(Partido Depressão & Transtorno) ',
+                        partido: 'PDT ',
                         fotos: [
                             { url: '1111.jpg', legenda: 'Vereador' }
                         ]
